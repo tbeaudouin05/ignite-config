@@ -56,6 +56,9 @@
                     It's assumed the directory is on the same drive with the WAL files.
                 -->
                 <property name="walArchivePath" value="/wal/archive"/>
+              
+                  <!-- Enabling authentication. -->
+                <property name="authenticationEnabled" value="true"/>
             </bean>
         </property>
       
