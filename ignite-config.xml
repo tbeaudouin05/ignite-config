@@ -58,6 +58,25 @@
                 <property name="walArchivePath" value="/wal/archive"/>
             </bean>
         </property>
+      
+      <bean id="ignite.cfg" class="org.apache.ignite.configuration.IgniteConfiguration">
+    <!-- Enabling Apache Ignite Persistent Store. -->
+    <property name="dataStorageConfiguration">
+        <bean class="org.apache.ignite.configuration.DataStorageConfiguration">
+            <property name="defaultDataRegionConfiguration">
+                <bean class="org.apache.ignite.configuration.DataRegionConfiguration">
+                    <property name="persistenceEnabled" value="true"/>
+                </bean>
+            </property>
+        </bean>
+    </property>
+
+    <!-- Enabling authentication. -->
+    <property name="authenticationEnabled" value="true"/>
+   
+  <!-- Other Ignite configurations. -->
+    
+</bean>
 
         <!-- Explicitly configure TCP discovery SPI to provide list of initial nodes. -->
         <property name="discoverySpi">
