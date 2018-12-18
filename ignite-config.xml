@@ -57,8 +57,6 @@
                 -->
                 <property name="walArchivePath" value="/wal/archive"/>
               
-                  <!-- Enabling authentication. -->
-                <property name="authenticationEnabled" value="true"/>
             </bean>
         </property>
       
