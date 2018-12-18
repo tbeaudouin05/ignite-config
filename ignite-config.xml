@@ -39,9 +39,6 @@
                     </bean>
                 </property>
 
-                <!-- Enabling authentication. -->
-                <property name="authenticationEnabled" value="true"/>
-
                 <!--
                    Sets a path to the root directory where data and indexes are
                    to be persisted. It's assumed the directory is on a dedicated disk.
