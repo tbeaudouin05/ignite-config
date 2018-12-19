@@ -31,7 +31,7 @@
       
           <property name="sqlSchemas">
               <list>
-                  <value>taskgameSchema</value>
+                  <value>TASKGAME_SCHEMA</value>
               </list>
           </property>
       
