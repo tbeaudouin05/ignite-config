@@ -29,12 +29,13 @@
 
     <bean id="ignite.cfg" class="org.apache.ignite.configuration.IgniteConfiguration">
       
+        <!--  only works with Ignite 2.7 but seems useless to my little understanding for now.......
           <property name="sqlSchemas">
               <list>
                   <value>TASKGAME_SCHEMA</value>
                   <value>USER_SCHEMA</value>
               </list>
-          </property>
+          </property> -->
       
         <!-- Enabling Apache Ignite Persistent Store. -->
         <property name="dataStorageConfiguration">
