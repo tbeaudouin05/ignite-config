@@ -38,8 +38,6 @@
               </list>
           </property> -->
       
-      dwedwe
-      
         <!-- Enabling Apache Ignite Persistent Store. -->
         <property name="dataStorageConfiguration">
             <bean class="org.apache.ignite.configuration.DataStorageConfiguration">
