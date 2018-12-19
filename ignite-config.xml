@@ -32,6 +32,7 @@
           <property name="sqlSchemas">
               <list>
                   <value>TASKGAME_SCHEMA</value>
+                  <value>USER_SCHEMA</value>
               </list>
           </property>
       
