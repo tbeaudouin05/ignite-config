@@ -28,7 +28,13 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="ignite.cfg" class="org.apache.ignite.configuration.IgniteConfiguration">
-
+      
+        <property name="sqlSchemas">
+            <list>
+                <value>taskgameSchema</value>
+            </list>
+        </property>
+      
         <!-- Enabling Apache Ignite Persistent Store. -->
         <property name="dataStorageConfiguration">
             <bean class="org.apache.ignite.configuration.DataStorageConfiguration">
