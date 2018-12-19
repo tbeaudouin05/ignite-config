@@ -21,6 +21,7 @@
     Configuration example with Kubernetes IP finder and Ignite persistence enabled.
     WAL files and database files are stored in separate disk drives.
 -->
+
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="
