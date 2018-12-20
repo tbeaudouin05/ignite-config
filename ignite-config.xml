@@ -52,6 +52,22 @@
                             Defining a data region that will consume up to 500 MB of RAM and 
                             will have eviction and persistence enabled.
                         -->
+                        
+                                                <bean class="org.apache.ignite.configuration.DataRegionConfiguration">
+                          <!-- Custom region name. -->
+                          <property name="name" value="TaskgameOperationalt"/>
+
+                          <!-- 100 MB initial size. -->
+                          <property name="initialSize" value="#{100L * 1024 * 1024}"/>
+
+                          <!-- 1000 MB maximum size. -->
+                          <property name="maxSize" value="#{1000L * 1024 * 1024}"/>
+
+                          <!-- Enabling persistence for the region. -->
+                          <property name="persistenceEnabled" value="true"/>
+                        </bean>
+                        
+                        
                
                         <bean class="org.apache.ignite.configuration.DataRegionConfiguration">
                           <!-- Custom region name. -->
