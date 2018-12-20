@@ -54,7 +54,21 @@
                         -->
                         <bean class="org.apache.ignite.configuration.DataRegionConfiguration">
                           <!-- Custom region name. -->
-                          <property name="name" value="taskgame_operational"/>
+                          <property name="name" value="TaskgameOperational"/>
+
+                          <!-- 100 MB initial size. -->
+                          <property name="initialSize" value="#{100L * 1024 * 1024}"/>
+
+                          <!-- 1000 MB maximum size. -->
+                          <property name="maxSize" value="#{1000L * 1024 * 1024}"/>
+
+                          <!-- Enabling persistence for the region. -->
+                          <property name="persistenceEnabled" value="true"/>
+                        </bean>
+                        
+                         <bean class="org.apache.ignite.configuration.DataRegionConfiguration">
+                          <!-- Custom region name. -->
+                          <property name="name" value="TaskgameOperationalBis"/>
 
                           <!-- 100 MB initial size. -->
                           <property name="initialSize" value="#{100L * 1024 * 1024}"/>
@@ -68,7 +82,7 @@
                         
                         <bean class="org.apache.ignite.configuration.DataRegionConfiguration">
                           <!-- Custom region name. -->
-                          <property name="name" value="taskgame_historical"/>
+                          <property name="name" value="TaskgameHistorical"/>
 
                           <!-- 10 MB initial size. -->
                           <property name="initialSize" value="#{10L * 1024 * 1024}"/>
