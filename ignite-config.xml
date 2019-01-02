@@ -57,11 +57,11 @@
                           <!-- Custom region name. -->
                           <property name="name" value="TaskgameOperational"/>
 
-                          <!-- 100 MB initial size. -->
-                          <property name="initialSize" value="#{100L * 1024 * 1024}"/>
+                          <!-- 10 MB initial size. -->
+                          <property name="initialSize" value="#{10L * 1024 * 1024}"/>
 
-                          <!-- 1000 MB maximum size. -->
-                          <property name="maxSize" value="#{1000L * 1024 * 1024}"/>
+                          <!-- 100 MB maximum size. -->
+                          <property name="maxSize" value="#{10L * 1024 * 1024}"/>
 
                           <!-- Enabling persistence for the region. -->
                           <property name="persistenceEnabled" value="true"/>
@@ -72,10 +72,10 @@
                           <property name="name" value="TaskgameOperationalBis"/>
 
                           <!-- 100 MB initial size. -->
-                          <property name="initialSize" value="#{100L * 1024 * 1024}"/>
+                          <property name="initialSize" value="#{10L * 1024 * 1024}"/>
 
                           <!-- 1000 MB maximum size. -->
-                          <property name="maxSize" value="#{1000L * 1024 * 1024}"/>
+                          <property name="maxSize" value="#{10L * 1024 * 1024}"/>
 
                           <!-- Enabling persistence for the region. -->
                           <property name="persistenceEnabled" value="true"/>
@@ -86,10 +86,10 @@
                           <property name="name" value="TaskgameOperationalTer"/>
 
                           <!-- 100 MB initial size. -->
-                          <property name="initialSize" value="#{100L * 1024 * 1024}"/>
+                          <property name="initialSize" value="#{10L * 1024 * 1024}"/>
 
                           <!-- 1000 MB maximum size. -->
-                          <property name="maxSize" value="#{1000L * 1024 * 1024}"/>
+                          <property name="maxSize" value="#{10L * 1024 * 1024}"/>
 
                           <!-- Enabling persistence for the region. -->
                           <property name="persistenceEnabled" value="true"/>
@@ -103,7 +103,7 @@
                           <property name="initialSize" value="#{10L * 1024 * 1024}"/>
 
                           <!-- 100 MB maximum size. -->
-                          <property name="maxSize" value="#{100L * 1024 * 1024}"/>
+                          <property name="maxSize" value="#{10L * 1024 * 1024}"/>
 
                           <!-- Enabling persistence for the region. -->
                           <property name="persistenceEnabled" value="true"/>
